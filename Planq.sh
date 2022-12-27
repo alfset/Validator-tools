@@ -66,7 +66,7 @@ make install
 
 # config
 planqd config chain-id $PLANQ_CHAIN_ID
-planqd config keyring-backend file
+planqd config keyring-backend os
 planqd config node tcp://localhost:${PLANQ_PORT}657
 
 # init
