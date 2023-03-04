@@ -38,7 +38,7 @@ cd restake
 sudo tee $HOME/restake/.env > /dev/null <<EOF
 MNEMONIC=$MNEMONIC
 EOF
-sed -i -e "s/^pruning *=.*/pruning = \"$prunineg\"/" $HOME/restake/.env
+
 rm $HOME/restake/src/networks.json
 wget -O $HOME/restake/src/networks.json https://raw.githubusercontent.com/alfset/Validator-Auto-Installer/main/networks.json 
 sed -i -e "s/^ownerAddress *=.*/ownerAddress = \"$VALOPER\"/" $HOME/restake/src/networks.json
