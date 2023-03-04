@@ -86,5 +86,7 @@ sudo systemctl enable restake.timer
 sudo systemctl start restake.timer && sudo journalctl -u restake.service -f -o cat
 
 echo '=============== SETUP FINISHED ==================='
+echo -e 'Please create Pull request on https://github.com/eco-stake/validator-registry'
+echo -e 'You will see not operator address in log until your pull request being merge by Eco-stake in validator registry'
 echo -e 'To check logs: \e[1m\e[32mjournalctl -fu restake.service \e[0m'
 echo -e 'To check timer: \e[1m\e[32mjournalctl -fu restake.timer \e[0m'
