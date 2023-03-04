@@ -51,11 +51,11 @@ sudo tee $HOME/restake/src/networks.json > /dev/null <<EOF
 EOF
 
 git pull
-docker-compose run --rm app npm install
-docker-compose build --no-cache
+docker compose run --rm app npm install
+docker compose build --no-cache
 
 #try running
-docker-compose run --rm app npm run autostake
+docker compose run --rm app npm run autostake
 
 #create restake service
 sudo tee /etc/systemd/system/restake.service > /dev/null <<EOF
@@ -68,7 +68,7 @@ Wants=restake.timer
 [Service]
 Type=oneshot
 WorkingDirectory=/$HOME/restake
-ExecStart=/usr/bin/docker-compose run --rm app npm run autostake
+ExecStart=/usr/bin/docker compose run --rm app npm run autostake
 
 [Install]
 WantedBy=multi-user.target
