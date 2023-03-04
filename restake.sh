@@ -41,7 +41,15 @@ EOF
 
 rm $HOME/restake/src/networks.json
 wget -O $HOME/restake/src/networks.json https://raw.githubusercontent.com/alfset/Validator-Auto-Installer/main/networks.json 
-sed -i -e "s/^ownerAddress *=.*/ownerAddress = \"$VALOPER\"/" $HOME/restake/src/networks.json
+sudo tee $HOME/restake/src/networks.json > /dev/null <<EOF
+[
+  {
+    "name": "planq",
+    "ownerAddress": "$VALOPER"
+  }
+]
+EOF
+
 git pull
 docker-compose run --rm app npm install
 docker-compose build --no-cache
