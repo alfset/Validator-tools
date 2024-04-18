@@ -1,0 +1,6 @@
+{
+    "rpc": "https://rpc.oraichain.comunitynode.my.id",
+    "rest": "https://rest.oraichain.comunitynode.my.id",
+    "websocket": "wss://rpc.oraichain.comunitynode.my.id/websocket",
+    "peers": "3b3ed188d652fef879c941d6c3b684382c5525c2@15.235.216.26:26657"
+}
