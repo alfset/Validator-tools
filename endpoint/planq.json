@@ -1,0 +1,7 @@
+{
+    "rpc": "https://rpc.planq.comunitynode.my.id",
+    "rest": "https://rest.planq.comunitynode.my.id",
+    "websocket": "wss://rpc.oraichain.comunitynode.my.id/websocket",
+    "jsonrpc": "https://evm.planq.comunitynode.my.id",
+    "evm-websocket": "wss://websocket.planq.comunitynode.my.id"
+}
