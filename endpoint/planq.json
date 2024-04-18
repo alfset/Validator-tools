@@ -3,5 +3,6 @@
     "rest": "https://rest.planq.comunitynode.my.id",
     "websocket": "wss://rpc.oraichain.comunitynode.my.id/websocket",
     "jsonrpc": "https://evm.planq.comunitynode.my.id",
-    "evm-websocket": "wss://websocket.planq.comunitynode.my.id"
+    "evm-websocket": "wss://websocket.planq.comunitynode.my.id",
+    "peers": "89bd24ef4ccbd2425f127fd7822b4e55b0e09c36@194.163.150.181:26657"
 }
